@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.background{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 150px 400px 1fr;
+}
+
+.leftBar{
+    border-right: 4px solid #F1F1F1;
+    background-color: #A43F49;
+    padding-top: 100px;
+    width: 400px;
+    min-height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    left: 150px;
+}
+
+.profile img{
+    width: 200px;
+    border-radius: 100%;
+    margin: 0 50px;
+}
+
+.myName{
+    margin: 50px;
+    text-align: center;
+    color: #F1F1F1;
+} 
+
+.menu{
+    width: 100%;
+    text-align: center;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.linkMenu{
+    background-color: #A43F49;
+    color: #F1F1F1;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 100%;
+    line-height: 60px;
+    padding: auto;
+    transition: all 0.4s ease-in-out;
+}
+
+.linkMenu:hover{
+    color: #A43F49;
+    background-color: #F1F1F1;
+}
+
+.activo{
+    color: #A43F49;
+    background-color: #F1F1F1;
+}
+
+.social ul{
+    margin: 50px;
+    display: flex;
+}
+
+a.linkSocial{
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #F1F1F1;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    line-height: 50px;
+    padding: auto;
+    transition: all 0.4s ease-in-out;
+}
+
+a.linkSocial:hover{
+    color: #A43F49;
+    background-color: #F1F1F1;
+}
+
+.content{
+    grid-column: 3;
+}
+
+.content #about, #technologies, #proyects{
+    color: #F1F1F1;
+    font-size: 4rem;
+    font-weight: 900;
+    padding-top: 100px;
+    border-top: 4px solid rgba(255, 255, 255, 0.3);
+    height: 100vh;
+    text-align: center;
+}
+
+.copy{
+    padding: 40px;
+    border-top: 4px solid rgba(255, 255, 255, 0.3);
+}
