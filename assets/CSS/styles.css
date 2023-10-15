@@ -18,13 +18,13 @@
     box-sizing: border-box;
     border-right: 4px solid #F1F1F1;
     background-color: #A43F49;
-    padding-top: 50px;
     width: 400px;
     min-height: 100%;
     position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     list-style-type: none;
     left: 150px;
 }
@@ -93,12 +93,15 @@ a.linkSocial:hover, .activo, .linkMenu:hover{
 
 .content #about, #technologies, #proyects{
     color: #F1F1F1;
+    padding: 100px 0;
+    border-top: 4px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+.content .title{
+    color: #F1F1F1;
     font-size: 4rem;
     font-weight: 900;
-    padding-top: 100px;
-    border-top: 4px solid rgba(255, 255, 255, 0.3);
-    height: 100vh;
-    text-align: center;
 }
 
 .copy{
@@ -106,12 +109,71 @@ a.linkSocial:hover, .activo, .linkMenu:hover{
     border-top: 4px solid rgba(255, 255, 255, 0.3);
 }
 
+/* contenido */
 
-@media only screen and (min-width: 1950px) {
 
-    .leftBar{
-        padding-top: 100px;
-    }
+/* Technologies */
+
+#technologies article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tech{
+    background-color: rgba(241, 241, 241, 0.3);
+    color: #F1F1F1;
+    width: 500px;
+    height: 400px;
+    margin: 20px;
+    padding: 30px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.tech i{
+    font-size: 3.5em;
+}
+
+.tech :nth-child(2){
+    font-size: 2em;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.tech:hover i{
+    color: #A43F49;
+}
+
+.tech:hover{
+    background-color: rgba(241, 241, 241, 1);
+    color: #1C1F1F;
+}
+
+/* Proyects */
+
+#proyects article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#proyects img{
+    width: 500px;
+    margin: 20px;
+    border: 3px solid rgba(241, 241, 241, 0.5);
+}
+
+
+/* Responsive */
+
+@media only screen and (min-width: 1676px) {
 
     .myName{
         margin: 50px;
@@ -123,9 +185,10 @@ a.linkSocial:hover, .activo, .linkMenu:hover{
     #about{
         background-color: #A43F49;
     }
+
 }
 
-@media only screen and (max-width: 1550px) {
+@media only screen and (max-width: 1680px) {
 
     .leftBar{
         left: 0;
@@ -142,7 +205,7 @@ a.linkSocial:hover, .activo, .linkMenu:hover{
 
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1530px) {
 
     .leftBar{
         left: -400px;
@@ -218,7 +281,7 @@ a.linkSocial:hover, .activo, .linkMenu:hover{
 
 @media only screen and (max-height: 576px) {
     .leftBar{
-        padding-top: 10px;
+        padding-top: 0;
     }
     .profile img{
         display: none;
